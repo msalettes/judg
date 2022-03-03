@@ -1,8 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'react-intl';
+import LayoutFlow from '../../graph';
 
-export default function Movies(): JSX.Element {
+export default function Judg(): JSX.Element {
   const { formatMessage } = useIntl();
   return (
     <>
@@ -14,6 +15,7 @@ export default function Movies(): JSX.Element {
           <FormattedMessage id="home.title" />
         </h1>
       </div>
+      <LayoutFlow />
     </>
   );
 }

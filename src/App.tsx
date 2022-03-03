@@ -5,7 +5,7 @@ import AppLayout from './components/AppLayout';
 import { ErrorFallback } from './components/Error/Error';
 import Loading from './components/Loading';
 import Providers from './providers';
-const Movies = React.lazy(() => import('./pages/Home'));
+const Judg = React.lazy(() => import('./pages/Home'));
 const NotFound = React.lazy(() => import('./pages/404'));
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <ErrorBoundary FallbackComponent={ErrorFallback}>
           <Suspense fallback={<Loading />}>
             <Routes>
-              <Route path="/" element={<Movies />} />
+              <Route path="/" element={<Judg />} />
               <Route path="*" element={<NotFound />} />
               {/* PLOP_INJECT_ROUTE */}
             </Routes>
